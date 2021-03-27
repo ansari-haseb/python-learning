@@ -40,7 +40,7 @@ def login():
     userAsJson = getAsJson(user)
     resultCount = len(userAsJson)
     if resultCount < 1:
-        return "<h2>USER NOT FOUND</h2>"
+        return "<h2>Username or Password is Incorrect</h2>"
     else:
         return "<h2>I'M LOGGED IN</h2><br><br><h2>%s</h2>"  %(userAsJson[0])
 
